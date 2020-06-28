@@ -1,0 +1,1326 @@
+
+html {
+	height: 100vh;
+	min-height: 100vh;
+	max-height: 100vh;
+	width: 100vw;
+	min-width: 100vw;
+	max-height: 100vw;
+}
+body {
+	font-family: sans-serif;
+    font-family: sans-serif;
+	color:white;
+	font-size: 1.5em;
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+    height:100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.hashicon {
+    float: left;
+    width: 45px;
+    height: 50px !important;
+}
+
+.pasteqr > button {
+    border-bottom: 0;
+    float: right;
+}
+
+.pasteqr > button:hover {
+    background-color: white;
+    border-color: #ccc;
+}
+
+.pasteqr > * {
+    margin-bottom: 0 !important;
+}
+
+.pasteqr + input[type="text"], .pasteqr + input[type="password"], .pasteqr + textarea {
+    border-radius: 0.25em 0 0.25em 0.25em;
+}
+
+.pasteqr > button:last-of-type:not(:first-of-type) {
+    border-radius: 0.25em 0 0 0;
+}
+
+.pasteqr > button:first-of-type:not(:last-of-type) {
+    border-radius: 0 0.25em 0 0;
+    margin-left: -1px;
+}
+
+.pasteqr > button:first-of-type:last-of-type {
+    border-radius: 0.25em 0.25em 0 0;
+}
+
+.pasteqr > button:not(:first-of-type):not(:last-of-type) {
+    border-left: none;
+    border-radius: 0 0 0 0;
+}
+
+/* active items */
+/*
+.active a {
+    color: white !important;
+}
+.accountitem.active .currency {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding-top: 1px;
+    padding-bottom: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.active .accloadspinner {
+    color: white;
+}
+.accountitem.active .trustlines {
+    background: none;
+}
+*/
+
+
+#accountslist .active {
+    color: inherit;
+    background-color: inherit !important;
+}
+
+#walletbackup {
+    flex: 2;
+}
+
+textarea {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    min-height: 4em;
+}
+#generatedaddress, #accsecret, #accdetailsaddress {
+    font-size: 1.2em !important;
+    color: black;
+    border: 1px dashed black;
+    box-shadow: none;
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 0.2em;
+/*    display: inline-block; */
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: clip;
+    word-wrap: break-word;
+    width: 100%;
+}
+#generatedaddress {
+	position:relative;
+
+}
+
+i.fa.fa-toggle-off, i.fa.fa-toggle-on {
+    font-size: 1.1em;
+}
+
+i.fa.fa-chevron-circle-left, i.fa.fa-question-circle {
+    transform: translateY(0.1em);
+}
+
+.pasteqr > button {
+	min-width: 4em !important;
+	vertical-align: middle;
+
+}
+
+
+.pasteqr > button > i.fa {
+	font-size: 1.2em;
+	vertical-align: middle;
+	color: #0027ff;
+}
+
+.accopt {
+    width: 10em;
+    display: block;
+}
+
+.accopt + .accopt {
+    margin-left: 1em;
+}
+
+.transactionlist i.fa {
+    display: inline;
+}
+
+
+/* pinpad lettering contributed by https://github.com/WietseWind */
+.pinpad button i.char {
+    font-size: .5em;
+    text-transform: uppercase;
+    font-style: normal;
+    display: block;
+    line-height: .4em;
+    position: absolute;
+    width: 100%;
+    margin-top: -20%;
+    letter-spacing: 2px;
+    font-weight: normal;
+    padding-left: 2px;
+}
+
+#generatedaddress:before {
+    display: block;
+    content: "xxxxxxxxxxxxxxxx";
+    text-align: left;
+    color: black;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    font-size: 1.3em !important;
+    line-height: 1.15em;
+    filter: blur(5px);
+}
+
+#tabbackup2 h3 {
+    margin-top: 0;
+}
+
+.btnbig {
+    min-width: 20em !important;
+    margin-bottom: 1em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;    
+}
+
+.toggleswitch {
+    font-size: 2em;
+    vertical-align: middle;
+    opacity: 0.5;
+    margin-left: 0.5em;
+    color: black;
+    float: right;
+    margin-left: 0.5em;
+}
+
+.paygrouping {
+    margin-bottom: 0.5em;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.paygrouping > div {
+    text-align: right;
+    margin: 0;
+    padding-left: 1em;
+}
+
+.paygrouping {
+    padding: 0.2em;
+}
+
+.paygrouping > label {
+    position: absolute;
+    left: 0.5em;
+    top: 0.2em;
+    margin: 0;
+}
+
+.paygrouping {
+    color: blue;
+    font-size: 1em;
+    overflow-wrap: break-word;
+    display: block;
+    padding-left: 6.5em;
+    position: relative;
+    padding-right: 0.5em;
+}
+
+#tabpaymentconfirm div[id^="confirm"] {
+    color: blue;
+    font-size: 1em;
+    overflow-wrap: break-word;
+    display: block;
+    vertical-align: middle;
+}
+
+div#generatedaddress {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+ul#adtrustlines {
+    color: black;
+    margin-left: 1em;
+    margin-right: 1em;    
+}
+
+.unknowntoggle:before {
+    content: "\f205";
+    color:red;
+    
+}
+
+.unknowntoggle:after {
+    position: absolute;
+    transform: translateX(-100%) rotate(180deg);
+    content: "\f205";
+    color:red;
+}
+
+
+.adtlheader {
+    justify-content: space-between;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-top: 0.4em;
+    margin-bottom: 0.8em;    
+}
+
+
+.adtlrow {
+    width: 100%;
+    margin-top: 0.5em;
+    text-align: left;
+    margin-bottom: 0.5em;
+    border-radius: 2px;
+}
+
+span.adtlorder {
+    padding-left: 2em;padding-right: 2em;font-size: 0.7em;line-height: 2.5em;font-weight: 500;color: #01d301;
+}
+
+
+.tlissuer {
+    font-size: 0.8em;
+    line-height: 1.8em;
+    overflow-wrap: none;
+    white-space: nowrap;
+    margin-left: 0.5em;
+    margin-right: 0.5em;    
+    flex: 1;
+}
+
+
+.adtlrow.adtlbuyrow {
+    background: rgba(0,255,0,0.2); 
+}
+
+li.adtrustline:not(:first-of-type) {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+}
+
+.tlissuer {
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tlvaluation {}
+
+.tlvaluation .currency {
+    background: rgba(3, 151, 0, 0.8);
+}
+
+.accountdetailsselector {
+    z-index: 89 !important;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #286abc;
+}
+
+.accountdetailsselector > *:not(.accdetailsinnertabselected) {
+    background: rgb(0, 81, 185) !important;
+    color: white !important;
+}
+
+.accountdetailsselector > .accdetailsinnertabselected {background: white;color: black;}
+
+.accountdetailsselector > li {
+    flex: 2;
+    text-align: center;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    border-radius: 2px 2px 0px 0px;
+}
+
+div#tabaccountdetails {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+div#accdetailstransactiondetails {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.accountdetailsselector > li:not(:first-of-type) {
+    border-left: 1px solid #286abc;
+}
+
+.accountdetailsselector > li:last-of-type {
+}
+
+div#accdetailsaddressdetails {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.txrow {
+    color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.transactionlist {
+    list-style: none !important;
+}
+
+.txrow>span:first-of-type {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 60vw;
+    vertical-align: middle;
+}
+
+.txrow>span:last-of-type {
+    float: right;
+}
+
+.txrow>i {
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.txrow * {
+    display: inline;
+}
+
+.txrow fa {
+}
+
+.txrow i {
+    margin-right: 1em;
+    vertical-align: middle;
+}
+
+.txrow {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+#showrecoveryphrase {
+    color: blue;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    border: 1px dashed;
+    padding-bottom: 0.5em;
+    padding-top: 0.2em;
+}
+
+#tabshowrecovery h1 {
+    margin-top: 0 !important;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.moreindicatorabovenav {
+    bottom: calc(10px + 1.6em + env(safe-area-inset-bottom)) !important;
+}
+
+.moreindicatordark {
+    color: black !important;
+}
+#inputblocker {
+    position: fixed;
+    z-index: 100;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.liteloading:after {
+    display: block;
+    content: "\f1ce";
+    color: #307ee0;
+    font-size: 4em;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    -webkit-animation: fa-spin 2s infinite linear;
+    text-rendering: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: calc(50% - 0.5em);
+    top: calc(50% - 0.5em);
+    z-index: 101;
+}
+
+.loading:before {
+    display: block;
+    animation: fa-spin 2s infinite linear;
+    z-index: 102;
+    background: white;
+    content: "\f110";
+    color: #307ee0;
+    font-size: 4em;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    -webkit-animation: fa-spin 2s infinite linear;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: calc(50% - 0.5em);
+    top: calc(50% - 0.5em);
+    z-index: 104;
+}
+.loading:after {
+    position: fixed;
+    display: block;
+    background: white;
+    content: " ";
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: 103;
+}
+
+.select2-dropdown {
+    color: black;
+}
+
+.select2-selection {
+    min-height: 2.2em;
+}
+
+.select2-search {
+    display: none !important;
+}
+
+button:not(.varsize) {
+    min-width: 6em;
+}
+a:hover, a:visited, a:active, a:focus {
+    text-decoration: none !important;
+}
+
+.suppressbottommargin, .suppressbottommargin > * {
+	margin-bottom: 0 !important;
+}
+
+.bottom-list-button {
+    text-align: center;
+    vertical-align: middle;
+}
+.list-group-item {
+    width: 100%;
+}
+
+.accountitem {
+    color: hsla(0, 0%, 35%, 1) !important;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+ul.verticalform > li {
+    height: 100%;
+}
+
+
+.address {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+video#qrpreview {
+    max-height: 50vh;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+img.loader {
+    vertical-align: middle;
+    top: calc(50% - 25px);
+    position: absolute;
+    left: calc(50% - 25px);
+}
+.amount {
+    //text-align: right;
+    flex: 1;
+}
+#accountslist > li {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: 0;
+    margin: 0;
+    padding-left: 0.4em;
+    padding-right: 0.4em;    
+}
+#btnaddaccount > * {
+    vertical-align: middle;
+}
+i.fa, i.fas, i.far {
+    font-size: 1.5em;
+}
+
+button.btnpinnumber i.fas {
+    font-size: 1em;
+}
+
+.fa-lock {
+    font-size: 1.4em;
+}
+
+.addrtype {
+    font-family: monospace;
+    vertical-align: bottom;
+    line-height: 1.2em;
+}
+
+.xrbtn {
+    max-width: 2.5em;
+    max-height: 2.4em;
+    min-width: 2.5em !important;
+    min-height: 2.4em;
+    padding: 0;
+    margin: 0;
+    color: black;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    float: right;
+}
+
+.xrbtn > i.fa {
+    margin-right: -0.1em;
+    vertical-align: middle;
+}
+
+label {
+    color: black;
+}
+#fromaccountslist {
+    margin-bottom: 0 !important;
+}
+
+.screentab {
+    overflow-y: scroll;
+    margin-top: calc(4.0em + env(safe-area-inset-top));
+    height: calc(100vh - 4em -  env(safe-area-inset-top) - env(safe-area-inset-bottom) - 3.5em);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    touch-action: pan-y;
+    -ms-touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    z-index: 1;
+}
+
+.screentab * {
+	z-index: 2;
+}
+
+
+
+/* this is removed for PC versions */
+::-webkit-scrollbar {width: 0px; background: transparent; display: none;}
+
+div.input-group>span.input-group-btn>button {
+    min-width: 5em;
+}
+
+
+
+
+#accdetailsqr {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+button, button:focus, button:active, button:hover {
+    outline: none !important;
+}
+
+.accountline .address {
+    max-width: 50%;
+}
+
+
+*[ontouchend], *[ontouchstart], .headerleft, .headerright {
+    cursor: pointer;
+}
+
+
+.pinpad_pending:before {
+    content: "Please login to finalize your payment...";
+    line-height: 4em;
+    color: #ffF000;
+    font-style: italic;
+}
+.pinpad_pending {
+    margin-top: calc(50vh - 20em) !important;
+}
+
+
+.textarealikediv {
+    color: black;
+    font-family: monospace;
+    font-size: 0.8em;
+    word-break: break-all;
+    border: 1px solid #cccccc;
+    padding: 0.5em;
+    background: #eeeeee;
+    border-radius: 0.5em;
+    user-select: text !important;
+}
+
+.trustline {
+    border-radius: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: left;
+    display: inline-flex;
+    white-space: nowrap;
+    margin-right: 0.25em;
+    margin-left:0.25em;
+}
+
+span#accdetailsamount {
+    float: right;
+}
+.accountline {
+    white-space: nowrap;
+    display: flex;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+}
+.accountline .currency {
+    background: rgba(3, 151, 0, 0.8);
+}
+
+
+.adtlinfo {
+    font-size: 0.8em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 2px;
+}
+
+.adtlsubheader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    opacity: 0.7;
+    max-width: 50em;
+}
+
+span.scap {
+    font-variant-caps:  all-small-caps;
+    line-height: 1.25em;
+}
+
+.adtlbutton {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    min-width: 1.5em !important;
+    max-width: 10em;
+    font-size: 1em;
+    padding: 0.2em;
+}
+
+.adtlbutton:not(:first-of-type) {
+    margin-left: 0.5em;
+}
+
+
+i.fa.fa-exchange {
+    transform: rotate(135deg);
+    font-size: 1.4em;
+}
+
+
+.adtllimitbutton {
+    flex: 2;
+    max-width: 15em;
+    overflow: hidden;
+}
+
+.adtrustline {
+    padding-bottom: 0.6em;
+    text-align: center;
+}
+
+.chartele {
+    display: inline-block;
+    border: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+
+.chartelered {
+    display: inline-block;
+    border: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background: #d47400;
+}
+
+.chartelegreen {
+    display: inline-block;
+    border: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background: #00BCD4;
+}
+
+.charteleblank {
+    display: inline-block;
+    border: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.accdetailbuttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 20em;
+}
+
+
+.accdetailbuttons > button {
+    flex: 1;
+    margin: 0.5em;
+    min-width: 8em;
+    max-width: 10em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+}
+
+.settingsbuttons {
+    max-width: 40em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.settingsbuttons > button {
+    margin: 0.5em;
+    margin-bottom: 0.5em !important;
+}
+
+.divbackuprompt {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100vh - 8.5em);
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+.adtlgraph > * {
+    vertical-align: bottom;
+}
+
+.adtlgraph {
+    position: relative;
+    max-width: 100%;
+    height: 4em;
+    white-space: nowrap;
+    border-bottom: 1px solid #80808047;
+    margin: 0;
+    padding: 0;
+    display: block;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.adtlorderslist > li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+}
+
+
+.offer {
+    flex: 1;
+    text-align: left;
+    font-size: 0.9em;
+    margin-top: 0.1em;
+    font-style: italic;
+}
+
+.orderkill {
+    text-align: right;
+    flex:1;
+}
+
+.orderdirection {
+    font-size: 0.9em;
+}
+
+.orderentry {
+    flex:2;
+    white-space: nowrap;
+}
+
+.adtlgraph > span:first-of-type:last-of-type:before {
+    content: "no orders";
+    display: block;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.orderpreview {
+    color:black;
+    text-align:center;
+    border: 1px solid red;
+    padding: 0.2em;
+    border-radius:2px;
+}
+
+.accloadspinner {
+    opacity: 0.4;
+    font-size: 1em !important;
+    line-height: 1em !important;
+    position: absolute;
+    color: #337ab7;
+    bottom: 0.2em;
+    right: 0.2em;
+    animation: fa-spin 2s infinite linear;
+}
+.bidask { 
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+    min-height: 1.4em;    
+}
+
+.ask{
+    color:red;
+    margin-left:0.5em;
+}
+
+.bid{
+    color:blue;
+}
+.currency {
+    font-size: 0.7em;
+    border-radius: 3px;
+    background-color: hsla(119, 0%, 61%, 1);
+    padding-right: 3px;
+    color: white;
+    padding-top: 2px;
+    padding-left: 3px;
+    padding-bottom: 1px;
+    display: inline-block;
+    min-width: 2.5em;
+    text-align: center;
+}
+
+.accselect2 {
+    color: black;
+    margin-bottom: 1em;
+}
+.select2-results__option {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.accselect2 > canvas {transform: translate(0px, 25%);}
+
+.select2 {
+    width: 100% !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ccc !important;
+}
+
+.selectarrow {
+    color: #888888;
+    position: absolute !important;
+    right: 0.3em !important;
+    background: white;
+    padding-left: 1em;
+    pointer-events: none;
+    font-size: 0.6em;
+    line-height: 4em;
+    width: 3em !important;
+}
+
+.select2-container {
+    margin-bottom: 1em;
+}
+
+.selectarrowig {
+    margin-right: 4.5em;
+}
+
+label {
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: inherit !important;
+    color: inherit !important;
+}
+
+#accountslist > li:not(:first-of-type):not(:last-of-type) {
+    border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+
+.trustlines:empty {
+    display: none;
+}
+
+.trustlines {
+    display: flex;
+//    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-right:0;
+    margin-left:0;
+    justify-content:space-between;   
+//    background: rgba(41, 206, 160, 0.05);
+    padding: 0.2em;
+}
+
+
+
+span.trustline_issuer {
+    overflow: hidden;
+    text-overflow:  ellipsis;
+}
+.mono {
+}
+.trustline>.amount {
+    white-space: nowrap;
+}
+
+
+.accountline .amount {
+    text-align: right;
+}
+
+.copybtn {
+    max-width: 2.5em;
+    max-height: 2.4em;
+    min-width: 2.5em !important;
+    min-height: 2.4em;
+    padding: 0;
+    margin: 0;
+    color: black;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    float: right;
+}
+
+
+ul.iosheader > li > * {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 1.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+input { /* ios patch */
+    background-clip: padding-box;
+}
+
+
+/* flat look */
+*:not(.btnpinnumber) {
+    border-radius: 0 !important;
+}
+/* end flat look */
+
+#navfooter > span:last-of-type {
+    left: calc(500vw/6);
+}
+#navfooter > span:nth-of-type(2) {
+    left: calc(100vw/2);
+}
+#navfooter > span:first-of-type {
+    left: calc(100vw/6);
+}
+
+
+#navfooter > span {
+    position: absolute;
+    top: 0.5em;
+    transform: translateX(-50%);
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;;
+}
+
+#navfooter {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    left: 0;
+    background: linear-gradient(45deg, #1959ab, #317fe2);
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    z-index: 90;
+    border-top: 1px solid hsla(214, 50%, 25%, 0.25);
+    height: calc(3.5em + env(safe-area-inset-bottom)) !important;
+    overflow: hidden;
+}
+
+.headerleft {
+    position: absolute;
+    vertical-align: middle;
+    line-height: 2.5em;
+    padding-right: 1em;
+    left: 1em;
+}
+
+.headermiddle {
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    vertical-align: middle;
+    line-height: 1.7em;
+    font-size: 1.2em;
+}
+
+.headerright {
+    position: absolute;
+    vertical-align: middle;
+    line-height: 2.5em;
+    right: 1.5em;
+    padding-left: 1em;
+}
+
+#navheader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: linear-gradient(45deg, #1959ab, #317fe2);
+    margin: 0;
+    list-style: none;
+    z-index: 90;
+    border-bottom: 1px solid hsla(214, 50%, 25%, 0.2);
+    height: calc(4.0em + env(safe-area-inset-top)) !important;
+    padding-top: calc(1em + env(safe-area-inset-top));
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+#navheader a, #navheader a:visited, #navheader a:active, #navheader a:hover, 
+#navfooter a, #navfooter a:visited, #navfooter a:active, #navfooter a:hover {
+    color: white !important;
+}
+
+.pinpad {
+    text-align: center;
+    margin-top: calc(50vh - 17em);
+}
+
+
+
+.logobackground {
+    background: url('images/toastwallet4finalgrd2new.png') no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+
+
+
+.darkbackground {
+    background: linear-gradient(45deg, #1959ab, #317fe2),  #1959ab;
+    background-repeat: no-repeat;
+}
+.darkbackground2 {
+    background: linear-gradient(45deg, #19ab4c, #317fe2), #1959ab;
+    background-repeat: no-repeat;
+}
+
+#tablicense h1 {
+    margin: 0 0 0.3em 0 !important;
+    padding: 0 !important;
+}
+#morecontentindicator {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+    z-index: 91;
+    font-size: 2em !important;
+}
+.pinnumber {
+    color: rgba(255,255,255,0.7);
+    min-height: 1.75em;
+}
+
+.darkbackground:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/background.png);
+    opacity: 0.1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    z-index: -1;
+}
+.pinpad button {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    padding: 0px;
+    margin: 0.2em 0.4em 0.2em 0.4em;
+    line-height: 3em;
+    font-size: 1.4em;
+    min-width: 3.6em !important;
+    min-height: 3.6em !important;
+    position: relative;
+    text-align: center;
+}
+
+
+.pinpad *:focus {
+    outline: none;
+}
+.pinpad button:active {
+    background-color: rgba(255,0,0,0.6);
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+
+*:not(input) {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+* {
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+    touch-action: pan-y;
+    -ms-touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+input
+{
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+
+#tabrecovery div {
+    margin-bottom: 1em;
+}
+
+.shake {
+  animation: shakeanimation 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+.bounce {
+  animation: bounceanimation 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+@keyframes shakeanimation {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes bounceanimation {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    transform: translate3d(0, -30px, 0);
+  }
+  60% {
+    transform: translate3d(0, -15px, 0);
+  }
+}
+

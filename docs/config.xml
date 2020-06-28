@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.toastwallet.core" version="3.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Toast Wallet</name>
+    <description>
+	Toast Wallet is an XRP wallet for Android and iOS.
+    </description>
+    <author email="support@toastwallet.com" href="https://toastwallet.com">
+        Toast Wallet
+    </author>
+    <content src="index.html" />
+    <hook src="hooks/all_before_build" type="before_build" />
+    <hook src="hooks/all_before_platform_add" type="before_platform_add" />
+    <access origin="*" />
+    <access origin="http://phonegap.com" subdomains="true" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="KeyboardShrinksView" value="true" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="EnableViewportScale" value="true" />
+    <preference name="phonegap-version" value="cli-7.0.1" />
+</widget>

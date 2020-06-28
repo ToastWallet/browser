@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Toast Wallet",
+  "short_name": "Toast Wallet",
+  "version": "com.toastwallet.core",
+  "description": "Toast Wallet is an XRP wallet for Android and iOS.",
+  "author": "Toast Wallet",
+  "icons": [],
+  "start_url": "index.html"
+}
